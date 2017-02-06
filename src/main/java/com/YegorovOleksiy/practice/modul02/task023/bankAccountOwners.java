@@ -9,8 +9,16 @@ public class bankAccountOwners {
         int[] balances = {1200, 250, 2000, 500, 3200};
         String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
 
-        int accountOwner = 3;
-        double withdrawal = 490;
+        int accountOwner = -1;
+        double withdrawal = 100;
+        String ownerName = "Lane";
+
+        for (int i = 0; i < ownerNames.length; i++) {
+            if (ownerName == ownerNames[i])
+            {
+                accountOwner = i;
+            }
+        }
 
         int balance = balances[accountOwner];
         double balanceAfter = 0;
