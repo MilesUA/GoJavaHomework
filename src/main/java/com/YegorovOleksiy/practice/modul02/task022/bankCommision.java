@@ -11,15 +11,16 @@ public class bankCommision {
         double commision = 0;
         balanceAfter = getBalanceAfter(balance, withdrawal);
         commision = withdrawal * 0.05;
-        if ((balanceAfter - commision) < 0) {
+        if (balanceAfter < 0) {
             System.out.println("NO");
         }
         else
-            System.out.println("OK " + commision + " " + (balanceAfter - commision));
+            System.out.println("OK " + commision + " " + balanceAfter);
     }
 
     private static int getBalanceAfter(int balance, double withdrawal) {
-        double balanceAfter = balance - withdrawal;
+        double comission = withdrawal * 0.05;
+        double balanceAfter = balance - withdrawal - comission;
         return (int) balanceAfter;
     }
 
