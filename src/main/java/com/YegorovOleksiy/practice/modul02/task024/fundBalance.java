@@ -1,9 +1,9 @@
-package com.YegorovOleksiy.practice.modul02.task023;
+package com.YegorovOleksiy.practice.modul02.task024;
 
 /**
  * Created by Miles on 06.02.2017.
  */
-public class bankAccountOwners {
+public class fundBalance {
     public static void main(String[] args) {
 
         int[] balances = {1200, 250, 2000, 500, 3200};
@@ -11,7 +11,7 @@ public class bankAccountOwners {
 
         int accountOwner = -1;
         double withdrawal = 100;
-        String ownerName = "Jane";
+        String ownerName = "Oww";
 
         for (int i = 0; i < ownerNames.length; i++) {
             if (ownerName == ownerNames[i])
@@ -23,20 +23,14 @@ public class bankAccountOwners {
 
         int balance = balances[accountOwner];
         double balanceAfter = 0;
-        double commision = 0;
 
         balanceAfter = getBalanceAfter(balance, withdrawal);
-        commision = withdrawal * 0.05;
-        if (balanceAfter  < 0) {
-            System.out.println(ownerNames[accountOwner] + " " + "NO");
-        }
-        else
-            System.out.println(ownerNames[accountOwner] + " " + withdrawal + " " + balanceAfter);
+
+        System.out.println(ownerNames[accountOwner] + " " + balanceAfter);
     }
 
     private static int getBalanceAfter(int balance, double withdrawal) {
-        double comission = withdrawal * 0.05;
-        double balanceAfter = balance - withdrawal - comission;
+        double balanceAfter = balance + withdrawal;
         return (int) balanceAfter;
     }
 }
