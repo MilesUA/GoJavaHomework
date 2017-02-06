@@ -7,7 +7,7 @@ public class bankCommision {
     public static void main(String[] args) {
         int balance = 100;
         double balanceAfter = 0;
-        double withdrawal = 99;
+        double withdrawal = 10;
         double commision = 0;
         balanceAfter = getBalanceAfter(balance, withdrawal);
         commision = withdrawal * 0.05;
