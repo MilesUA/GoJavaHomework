@@ -15,7 +15,7 @@ public class sum {
         System.out.println("sum = " + sum);
     }
 
-    public static int getRandomInteger(int maxValue) {
+    private static int getRandomInteger(int maxValue) {
 
         int randomValue = (int) (Math.random() * maxValue);
 
