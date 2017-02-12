@@ -3,32 +3,63 @@ package com.YegorovOleksiy.practice.modul02.task021;
 /**
  * Created by Miles on 06.02.2017.
  */
-public class modulus {
+public class Modulus {
     public static void main(String[] args) {
-        int[] array = new int[10];
-        int modul = 0;
-        int firsl = 0;
-        int last = 0;
-        for (int i = 0; i < array.length; i++) {
-            array[i] = getRandomInteger(100);
+
+        int[] intArray = {1, 2, 3, 10, -5};
+        double[] doubleArray = {1, 2, 3, 10, -5};
+
+        Modulus myModulus = new Modulus();
+
+        myModulus.methodModulus(intArray);
+        myModulus.methodModulus(doubleArray);
+
+    }
+
+    private void methodModulus(double[] doubleArray) {
+
+        double doubleModul = 0;
+        double first = 0;
+        double last = 0;
+
+        for (int i = 0; i < doubleArray.length; i++) {
+
             if (i == 0) {
-                firsl = array[i];
-                System.out.println("Number " + (i + 1) + " = " + array[i]);
+                first = doubleArray[i];
+                System.out.println("FirstNumber " + (i + 1) + " = " + doubleArray[i]);
             }
-            if (i == (array.length - 1)) {
-                last = array[i];
-                System.out.println("Number " + (i + 1) + " = " + array[i]);
+            if (i == (doubleArray.length - 1)) {
+                last = doubleArray[i];
+                System.out.println("LastNumber " + (i + 1) + " = " + doubleArray[i]);
             }
 
         }
-        modul = firsl % last;
-        System.out.println("modulus = " + modul);
+        doubleModul = first % last;
+        System.out.println("doubleModulus = " + doubleModul);
+
     }
 
-    public static int getRandomInteger(int maxValue) {
+    private void methodModulus(int[] intArray) {
 
-        int randomValue = (int) (Math.random() * maxValue);
+        int intModul = 0;
+        int first = 0;
+        int last = 0;
 
-        return randomValue;
+        for (int i = 0; i < intArray.length; i++) {
+
+            if (i == 0) {
+                first = intArray[i];
+                System.out.println("FirstNumber " + (i + 1) + " = " + intArray[i]);
+            }
+            if (i == (intArray.length - 1)) {
+                last = intArray[i];
+                System.out.println("LastNumber " + (i + 1) + " = " + intArray[i]);
+            }
+
+        }
+        intModul = first % last;
+        System.out.println("intModulus = " + intModul);
+
     }
+
 }

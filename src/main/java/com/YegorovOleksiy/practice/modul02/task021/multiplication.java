@@ -3,22 +3,42 @@ package com.YegorovOleksiy.practice.modul02.task021;
 /**
  * Created by Miles on 06.02.2017.
  */
-public class multiplication {
+public class Multiplication {
     public static void main(String[] args) {
-        int[] array = new int[10];
-        long mult = 1;
-        for (int i = 0; i < array.length; i++) {
-            array[i] = getRandomInteger(10);
-            mult *= array[i];
-            System.out.println("Number " + (i + 1) + " = " + array[i]);
+        int[] intArray = {1, 2, 3, 10, -5};
+        double[] doubleArray = {1, 2, 3, 10, -5};
+
+        Multiplication myMultiplication = new Multiplication();
+
+        myMultiplication.methodMultiplication(intArray);
+        myMultiplication.methodMultiplication(doubleArray);
+
+    }
+
+    private void methodMultiplication(double[] doubleArray) {
+
+        double mult = 1;
+
+        for (int i = 0; i < doubleArray.length; i++) {
+
+            mult *= doubleArray[i];
+            System.out.println("Number " + (i + 1) + " = " + doubleArray[i]);
         }
-        System.out.println("multiplication = " + mult);
+        System.out.println("doubleMultiplication = " + mult);
+
     }
 
-    public static int getRandomInteger(int maxValue) {
+    private void methodMultiplication(int[] intArray) {
 
-        int randomValue = (int) (Math.random() * maxValue);
+        int mult = 1;
 
-        return randomValue;
+        for (int i = 0; i < intArray.length; i++) {
+
+            mult *= intArray[i];
+            System.out.println("Number " + (i + 1) + " = " + intArray[i]);
+        }
+        System.out.println("intMultiplication = " + mult);
+
     }
+
 }
