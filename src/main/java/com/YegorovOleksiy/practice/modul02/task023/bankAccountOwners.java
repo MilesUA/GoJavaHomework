@@ -10,8 +10,8 @@ public class bankAccountOwners {
         String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
 
         int accountOwner = -1;
-        double withdrawal = 100;
-        String ownerName = "Jane";
+        double withdrawal = 300;
+        String ownerName = "Ann";
 
         for (int i = 0; i < ownerNames.length; i++) {
             if (ownerName == ownerNames[i])
@@ -21,22 +21,20 @@ public class bankAccountOwners {
             }
         }
 
-        int balance = balances[accountOwner];
-        double balanceAfter = 0;
-        double commision = 0;
+        bankAccountOwners myBankAccountOwners = new bankAccountOwners();
+        myBankAccountOwners.methodBankAccountOwners(balances[accountOwner], ownerNames[accountOwner], withdrawal);
 
-        balanceAfter = getBalanceAfter(balance, withdrawal);
-        commision = withdrawal * 0.05;
-        if (balanceAfter  < 0) {
-            System.out.println(ownerNames[accountOwner] + " " + "NO");
-        }
-        else
-            System.out.println(ownerNames[accountOwner] + " " + withdrawal + " " + balanceAfter);
     }
 
-    private static int getBalanceAfter(int balance, double withdrawal) {
+    private void methodBankAccountOwners(int balance, String ownerName, double withdrawal) {
+
         double comission = withdrawal * 0.05;
         double balanceAfter = balance - withdrawal - comission;
-        return (int) balanceAfter;
+
+        if (balanceAfter < 0) {
+            System.out.println(ownerName + " " + "NO");
+        } else
+            System.out.println(ownerName + " " + withdrawal + " " + balanceAfter);
     }
+
 }
