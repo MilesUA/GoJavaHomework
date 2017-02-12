@@ -3,7 +3,7 @@ package com.YegorovOleksiy.practice.modul02.task023;
 /**
  * Created by Miles on 06.02.2017.
  */
-public class bankAccountOwners {
+public class BankAccountOwners {
     public static void main(String[] args) {
 
         int[] balances = {1200, 250, 2000, 500, 3200};
@@ -21,7 +21,7 @@ public class bankAccountOwners {
             }
         }
 
-        bankAccountOwners myBankAccountOwners = new bankAccountOwners();
+        BankAccountOwners myBankAccountOwners = new BankAccountOwners();
         myBankAccountOwners.methodBankAccountOwners(balances[accountOwner], ownerNames[accountOwner], withdrawal);
 
     }

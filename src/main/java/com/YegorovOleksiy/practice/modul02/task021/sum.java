@@ -9,7 +9,7 @@ public class Sum {
         int[] intArray = {1, 2, 3, 10, -5};
         double[] doubleArray = {1, 2, 3, 10, -5};
 
-        Sum mySum = new Sum();        
+        Sum mySum = new Sum();
         mySum.methodSum(intArray);
         mySum.methodSum(doubleArray);
 
