@@ -10,8 +10,8 @@ public class FundBalance {
         String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
 
         int accountOwner = -1;
-        int withdrawal = 100;
-        String ownerName = "Ann";
+        int withdrawal = 250;
+        String ownerName = "Jack";
 
         for (int i = 0; i < ownerNames.length; i++) {
             if (ownerName == ownerNames[i])
