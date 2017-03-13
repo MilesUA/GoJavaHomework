@@ -15,7 +15,6 @@ public class Course {
     private String name = "";
     private int hoursDuration = 0;
     private String teacherName = "";
-
     private Date startDate = new Date();
 
 

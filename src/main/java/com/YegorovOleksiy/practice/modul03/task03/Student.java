@@ -11,6 +11,7 @@ public class Student {
     private Course[] coursesTaken;
     private int age = 0;
 
+
     public Student(String firstName, String lastName, int group) {
         this.firstName = firstName;
         this.lastName = lastName;

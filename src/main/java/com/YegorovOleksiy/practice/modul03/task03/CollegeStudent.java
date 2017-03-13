@@ -21,12 +21,10 @@ public class CollegeStudent extends Student {
 
     public CollegeStudent(String firstName, String lastName, int group) {
         super(firstName, lastName, group);
-
     }
 
     public CollegeStudent(String lastName, Course[] coursesTaken) {
         super(lastName, coursesTaken);
-
     }
 
     public String getCollegeName() {

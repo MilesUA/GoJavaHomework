@@ -8,6 +8,7 @@ public class SpecialStudent extends CollegeStudent {
     private long secretKey;
     private String email;
 
+
     public SpecialStudent(long secretKey) {
         this.secretKey = secretKey;
     }
