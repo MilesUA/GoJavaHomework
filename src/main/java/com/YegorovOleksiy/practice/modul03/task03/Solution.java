@@ -9,11 +9,11 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        Course course1 = new Course(new Date(2016, 9, 2), "Math");
-        Course course2 = new Course(new Date(2016, 9, 1), "Economy");
-        Course course3 = new Course(new Date(2016, 9, 2), "Literature");
-        Course course4 = new Course(new Date(2016, 9, 1), "Physics");
-        Course course5 = new Course(new Date(2016, 9, 1), "Computer Science");
+        Course course1 = new Course(new Date(2016-9-2), "Math");
+        Course course2 = new Course(new Date(2016-9-1), "Economy");
+        Course course3 = new Course(new Date(2016-9-2), "Literature");
+        Course course4 = new Course(new Date(2016-9-1), "Physics");
+        Course course5 = new Course(new Date(2016-9-1), "Computer Science");
 
         Student studentPetro = new Student("Petro", "Zinych", 3);
         Student studentBohdan = new Student("Kozyrenko", new Course[]{course1, course2});

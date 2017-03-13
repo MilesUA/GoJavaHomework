@@ -9,9 +9,7 @@ import java.util.GregorianCalendar;
  */
 public class Course {
 
-//    static GregorianCalendar calendar = new GregorianCalendar(2003, 07, 01);
 
-//    private Date startDate;
     private String name = "";
     private int hoursDuration = 0;
     private String teacherName = "";
